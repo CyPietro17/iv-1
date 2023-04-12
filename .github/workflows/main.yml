@@ -13,5 +13,5 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Print commit information
-        run:
+        run: |
           git log -1 --pretty=format:"Commit: %H%nAuthor: %an%nDate: %ad%nMessage: %s"
